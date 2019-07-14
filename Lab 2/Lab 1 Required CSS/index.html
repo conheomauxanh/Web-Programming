@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form HTML</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./Styles.css">
+	</head>
+	<body>
+		<b>Form gửi dữ liệu</b>
+		<form name="action"  action="http://vnexpress.net">
+		<table>		
+			<colgroup>
+				<col width="200px">
+				<col width="250px"> 
+			</colgroup>
+			<tr>
+				<td><label for="TieuDe" class="title">Tiêu đề</label></td>
+			</tr>
+			<tr>
+				<td>Nội dung phản hồi</td>
+				<td><textarea name="comments" required></textarea></td>	
+			</tr>	
+			<tr>
+				<td>Giới tính</td>
+				<td>
+					<input type="radio" name="Gender" value="Nam"> Nam<br>
+					<input type="radio" name="Gender" value="Nữ" checked> Nữ<br>
+					<input type="radio" name="Gender" value="Không xác định" > Không xác định<br>
+				</td>	
+			</tr>
+			<tr>
+				<td>Chuyên mục phản hồi</td>
+				<td>
+					<select name="type">
+					  <option value="Thể thao" selected="">Thể thao</option>
+					  <option value="Bóng đá">Bóng đá</option>
+					  <option value="Gia đình">Gia đình</option>
+					  <option value="Âm nhạc">Âm nhạc</option>
+					  <option value="Kinh tế">Kinh tế</option>
+					  <option value="Sức khỏe">Sức khỏe</option>
+					</select>	
+				</td>
+			</tr>
+			<tr>
+				<td>Sở thích</td>
+				<form>
+					<td>
+					  <fieldset>
+					    <legend>Chọn nhiều sở thích</legend>
+
+					    <div><input type="checkbox" name="Favorite" value="Nghe nhạc "checked> Nghe nhạc<br></div>
+						<div><input type="checkbox" name="Favorite" value="Ca hát" checked> Ca hát<br></div>
+						<div><input type="checkbox" name="Favorite" value="Nhảy múa" > Nhảy múa<br></div>
+					  </fieldset>
+					</td>					
+				</form>									
+			</tr>
+			<tr>
+				<td><label for="Email" class="title">Email</label></td>
+				<td><input id="email" class="input" type="email" name="Email" required></td>		
+			</tr>
+			<tr>
+				<td>Họ và tên</td>
+				<td><input type="text" required="Họ Và Tên" value="Nguyễn Đình Châu"></td>		
+			</tr>
+			<tr>
+				<td>								
+				</td>
+				<td>
+					<input type="reset" name="resetButton" value="Reset">	
+					<input class="input" type="submit" name="submitButton" value="Gửi">
+				</td>
+			</tr>		
+		</table>
+		<tr>
+				<iframe width="500" height="400" src="https://www.youtube.com/embed/ZgRNBvSLsRc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>	
+				</iframe>
+			</tr>
+	</body>
+</html>

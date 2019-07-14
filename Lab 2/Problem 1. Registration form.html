@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Problem 1. Registration form</title>
+        <meta charset="utf-8">
+        <link rel="Styles" type="text/css" href="Styles.css">
+        <style>
+            .right{
+                text-align: right;
+            }
+            .summit{
+                text-align: center;
+			    background-color: #2EFEF7;
+            }
+            .width{
+                width: calc(100% - 30px);
+            }
+        </style>
+	</head>
+	<body>
+        <form>
+		<table border="2">
+			<tr>
+                <td class="right">
+                    <label><b>Last Name</b></label>
+                </td>
+                <td>
+                    <input class="width" type="text" name="LastName" value="Nakov">
+                </td>               
+            </tr>
+            <tr>
+                <td class="right">
+                    <label><b>First Name</b></label>
+                </td>
+                <td>
+                    <input class="width" type="text" name="FirstName" value="Svetlin">
+                </td>               
+            </tr>
+            <tr>
+                <td class="right">
+                    <label><b>Address</b></label>
+                </td>
+                <td>
+                    <textarea class="width" class="right" type="text" name="LastName" id="1" cols="20" rows="3">17 Hristo Botec Str. floor 3, apt. 12</textarea>
+                </td>               
+            </tr>
+            <tr>
+                <td class="right"><label><b>City</b></label>
+                <td>
+                    <table>
+                        <tr>
+                            <td><input type="text" name="cityName" value="Kaspichan"></td>
+                            <td class="right"><label><b>States</b></label>
+                            <td><input type="text" name="States" size="5"></td>
+                        </tr>
+                    </table>
+                </td>               
+            </tr>
+            <tr>
+                <td class="right"><label><b>Zip/Postal Code</b></label></td>
+                <td><input type="text" name="textZip/Postal Code" size="5" value="9325"></td>
+            </tr>
+            <tr>
+                <td class="right"><label><b>Country</b></label></td>
+                <td><select  name="Country" id="1">
+                    <option value="VietName">Việt Nam</option>
+                    <option selected="select" value="Bulgaria">Bulgaria</option>
+                    <option value="China">China</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td class="right"><label><b>Phone(country code, area code, number)</b></label></td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>(+</td>
+                            <td><input type="text" name="CountryCode" size="5" value="395"></td>
+                            <td>)</td>
+                            <td><input type="text" name="AreaCode" size="5" value="88"></td>
+                            <td>-</td>
+                            <td><input type="text" name="Number" value="8334343"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="right"><label><b>Email</b></label></td>
+                <td><input type="Email" name="Email" id="1" value="nakov@kasipchan.org"></td>
+            </tr>
+            <tr>
+                <td class="right"><label><b>Birth day</b></label></td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>Month</td>
+                            <td><input type="text" name="Month" id="1" size="2" value="06"></td>
+                            <td>Day</td>
+                            <td><input type="text" name="Day" id="1" size="2" value="14"></td>
+                            <td>Year(4 digit)</td>
+                            <td><input type="text" name="Year" id="1" size="2" value="1980"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="right"><label><b>Gender</b></label></td>
+                <td><select name="Gender" id="1">
+                    <option selected="select" value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td class="right"><label><b>Starting date</b></label></td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><input checked="Spring" type="radio" value="Spring" name="Starting date" id="1">Spring 2006</td>
+                            <td><input type="radio" value="Summer" name="Starting date" id="">Summner 2006</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="right"><label><b>Comments/Questions</b></label></td>
+                <td><textarea class="width" name="textare" id="1" cols="20" rows="3">Please send me mor information about the lodging</textarea></td>
+            </tr>
+            <tr>
+                <td class="summit" colspan="3">
+                    <input type="submit"  name="summit" value="Summit" id="1">
+                    <input type="reset"  name="ClearThisForm" value="Clear This Form" id="1">
+                </td>
+            </tr>
+        </form>
+        </table>  
+	</body>
+</html>

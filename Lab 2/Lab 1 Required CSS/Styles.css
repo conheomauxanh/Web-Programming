@@ -1,0 +1,22 @@
+input[type=email]{
+    height: 50px;
+}
+
+fieldset:first-child{
+	color: rgb(208, 255, 0);
+}
+
+div:nth-child(2){
+	color: rgb(119, 0, 255);
+}
+div:last-child{
+	color: rgb(42, 165, 144);
+}
+
+legend{
+	color: black;
+}
+
+input[type=submit]:hover{
+    color: red;	
+}
