@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Problem 1</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        .nav {
+            list-style-type: none;
+            text-align: center;
+        }
+        .nav>li {
+            display: inline-block;
+            position: relative;
+            padding: 5px 15px;
+        }
+        .nav>li:hover {
+            background-color: rgb(242, 242, 242);
+        }
+     
+        .sub-nav {           
+            width: 150px;
+            top: 40px;
+            left: 1px;
+            padding: 1px;
+            margin: 1px;
+            text-align: left;
+            list-style-type: none;
+            position: absolute;
+            display: none;
+        }
+        .sub-nav>li {
+            padding: 10px 15px;
+        }
+        .sub-nav>li a:hover{
+            background-color: rgb(242, 242, 242);
+        }
+        li:hover > ul{
+            display: block;
+        }
+        .nav>li:hover>.sub-nav {
+            display: block;
+        }
+        a {
+            font-size: 20px;
+            color: hsl(195, 100%, 40%);
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <ul class="nav">
+            <li><a href="">Trang Chủ</a></li>
+            <li><a href="">Hoa Tết</a></li>
+            <li><a href="">Hoa Hồ Điệp</a></li>
+            <li><a href="">Hoa Sinh Nhật</a></li>
+            <li><a href="">Hoa Khai Trương</a></li>
+            <li><a href="">Hoa Chia Buồn</a></li>
+            <li><a href="">Hoa Cưới</a></li>
+            <li><a href="">Hoa Văn Phòng/ Hoa Định Kỳ</a></li>
+            <li><a href="">Hoa Quốc Tế Phụ Nữ 8/3</a></li>
+            <li><a href="">Hoa Tặng Bạn Gái/Trai</a></li>
+
+            <li>
+                <a href="">Chủ đề</a>
+                <ul class="sub-nav">
+                    <li><a href="">Sinh Nhật/Kỷ niệm</a></li>
+                    <li><a href="">Khai Trương/Chúc mừng</a></li>
+                    <li><a href="">Chia Buồn/Đám tang</a></li>
+                    <li><a href="">Tình Yêu</a></li>
+                    <li><a href="">Công ty</a></li>
+                    <li><a href="">Ngày lễ</a></li>
+                    <li><a href="">Chia tay</a></li>
+                    <li><a href="">Cưới hỏi</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Thiết kế</a>
+                <ul class="sub-nav">
+                        <li><a href="">Hoa Bó</a></li>
+                        <li><a href="">Hoa Giỏ/Hộp</a></li>
+                        <li><a href="">Hoa Bình</a></li>
+                        <li><a href="">Hoa Cành</a></li>
+                        <li><a href="">Hoa Chậu Hồ Điệp</a></li>
+                        <li><a href="">Hoa Cầm Tay</a></li>
+                        <li><a href="">Hoa Chụp Hình</a></li>
+                        <li><a href="">Hoa Thùng</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
