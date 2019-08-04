@@ -1,0 +1,83 @@
+main {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(19, 16, 16, 0.849);
+    border-radius: 5px;
+    font-family: serif;
+    overflow: hidden;
+}
+
+img {
+    margin-left: 10pt;
+    width: 80pt;
+}
+
+.left-table {
+    margin-left: 20px;
+    width: 70%;
+    float: left;
+    border: 2px solid #000;
+    padding: 10px;
+    height: 70%;
+    margin-top: 10pt;
+}
+
+fieldset>legend {
+    font-weight: bold;
+    text-align: center;
+}
+
+.a {
+    float: left;
+    width: 300px;
+}
+
+#right-right {
+    margin-left: 300px;
+    width: 300px;
+}
+
+.right-table {
+    padding-left: 75%;
+    font-size: 1.5em;
+    padding-top: 50pt;
+}
+
+#right span{
+    margin-bottom: 30%;
+    text-align: right;
+}
+#right input {
+    margin-left: 15%;
+}
+ul li {
+    font-weight: bold;
+    display: inline-flex;
+    color: rgb(113, 204, 240);
+    text-decoration: underline;
+}
+
+.products {
+    margin-top: 10pt;
+    margin-right: 20pt;
+    float: right;
+    top: 2pt;
+    text-align: right;
+}
+
+.s {
+    float: left;
+    margin-top: auto;
+    margin-left: 20pt;
+    font-weight: bold;
+}
+ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: 20px;
+}
+hr {
+    width: 90%;
+    border: 1px solid rgb(44, 25, 25);
+}
