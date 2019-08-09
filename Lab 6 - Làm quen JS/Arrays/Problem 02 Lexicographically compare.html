@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lexicographically compare</title>
+</head>
+
+<body>
+    <p>
+        <input type="number" id="prime_checked">
+        <button onclick="ooop()">Check</button>
+        <button onclick="input()">Them so</button>
+    </p>
+    <script type="text/javascript">
+        function comparison2ArrayChar(letter1, letter2) {
+            var l1 = letter1.split('');
+            var l2 = letter2.split('')
+            var len = 0;
+            if (l1.length > l2.length) {
+                len = l2.length;
+            } else len = l1.length;
+            for (let i = 0; i < len; i++) {
+                if (l1[i] < l2[i]) {
+                    return document.writeln("<");
+                }
+                if (l1[i] > l2[i]) {
+                    return document.writeln(">");
+                }
+            }
+            if (l1.length > l2.length) {
+                return document.writeln("<");
+            } else if (l1.length < l2.length) {
+                return document.writeln(">");
+            } else document.writeln("=");
+        }
+        comparison2ArrayChar("Mai", "Chau");
+    </script>
+</body>
+
+</html>

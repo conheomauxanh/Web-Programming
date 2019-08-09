@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selection Sort</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function SelectionSort(array) {
+            var temp = 0;
+            for (var i = 0; i < array.length; i++) {
+                var mi = i;
+
+                for (var j = i + 1; j < array.length; j++) {
+                    if (array[j] < array[mi]) {
+                        mi = j;
+                    }
+                }
+
+                temp = array[i];
+                array[i] = array[mi];
+                array[mi] = temp;
+            }
+            for (var i = 0; i < array.length; i++) {
+                document.writeln(array[i] + "<br>");
+            }
+        }
+        SelectionSort(['1', '3', '2']);
+    </script>
+</body>
+
+</html>

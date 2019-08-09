@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Numbers from 1 to N</title>
+    <link rel="stylesheet" type="text/css" href="problem5css.css">
+</head>
+
+<body>
+    <p>
+        <input type="number" id="prime_checked">
+        <button onclick="print()"> Check</button>
+    </p>
+    <script type="text/javascript">
+        function print() {
+            var str = "";
+            var n = document.getElementById("prime_checked").value;
+            for (var i = 1; i <= n; i++) {
+                str += i + " ";
+            }
+            document.writeln(str);
+        }
+    </script>
+</body>
+
+</html>
